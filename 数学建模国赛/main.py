@@ -1,5 +1,10 @@
+# 导入需要的库
 import pandas as pd
 import numpy as np
+from solution import Solution
+
+# 创建实例
+sol = Solution()
 
 # 读取数据
 thes = pd.read_csv('data/basis.csv', encoding='gbk')
@@ -9,8 +14,6 @@ new_comp = pd.read_csv('n_data/new_comp.csv', encoding='gbk')
 
 # (第一问)
 # 检查数据的有效性
-from solution import Solution
-sol = Solution()
 sol.effectiveness(comp)
 
 # 设置数据不省略
